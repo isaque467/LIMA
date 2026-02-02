@@ -31,34 +31,91 @@
 
             <tr>
                 <td>02</td>
-                <td><img src="images.png" alt="escudo palmeiras"width="20"></td>
+                <td><img src="images.png" alt="escudo palmeiras" width="20"></td>
                 <td>34</td>
                 <td>19</td>
             </tr>
 
             <tr>
                 <td>03</td>
-                <td><img src="Gremio_logo.svg.png" alt="escudo gremio"width="20"></td>
+                <td><img src="Gremio_logo.svg.png" alt="escudo gremio" width="20"></td>
                 <td>33</td>
                 <td>18</td>
             </tr>
 
             <tr>
                 <td>04</td>
-                <td><img src="c73571c7b3688d3464cf2b1940d462bd.jpg" alt=" escudo flamengo "width="20"></td>
+                <td><img src="c73571c7b3688d3464cf2b1940d462bd.jpg" alt=" escudo flamengo " width="20"></td>
                 <td>32</td>
                 <td>19</td>
             </tr>
 
             <tr>
                 <td>05</td>
-                <td><img src="RedBullBragantino.png" alt="escudo RedBullBragantino"width="20"></td>
+                <td><img src="RedBullBragantino.png" alt="escudo RedBullBragantino" width="20"></td>
                 <td>32</td>
                 <td>19</td>
             </tr>
         </tbody>
 
     </table>
+    <form method="post" action="processar.php">
+
+        <fildset>
+            <legend>Dados do seu time </legend>
+
+            <label for="nome">Qual seu time: </label>
+            <input type="text" id="nome" name="nome" required>
+            <br><br>
+
+            <label for="email">Seu time tem mundial?: </label>
+            <input type="mundial" id="mundial" name="mundial" required>
+
+            <br><br>
+            <label for="idade">Quantos titulos brasileiros seu time possui: </label>
+            <input type="number" id="idade" name="number" min="5" max="120">
+
+            <br><br>
+
+            <label for="senha">Deixe seu comentario: </label>
+            <input type="comentario" id="comentario" name="comentario" required>
+
+        </fildset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Termos</legend>
+            <label for=" for=" termos>
+                <input type="checkbox" id="termos" name="termos" required>
+                Sou feliz
+                <input type="checkbox" id="sou feliz" name="sou feliz" required>
+                Não sou feliz
+                <input type="checkbox" id="sou feliz" name="sou feliz" required>
+                Sou muito alegre
+
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pagamento</legend>
+            <label for=" for=" termos>
+                <input type="checkbox" id="termos" name="termos" required>
+                C.credito
+                <input type="checkbox" id="sou feliz" name="sou feliz" required>
+                C.debito
+                <input type="checkbox" id="sou feliz" name="sou feliz" required>
+                Pix
+                <input type="checkbox" id="sou feliz" name="sou feliz" required>
+                Vale bombom
+
+            </label>
+        </fieldset>
+
+        <br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 
 </html>
